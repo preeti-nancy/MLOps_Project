@@ -1,6 +1,10 @@
+from pathlib import Path
+
 import joblib
 import pandas as pd
 import streamlit as st
+
+BASE_DIR = Path(__file__).resolve().parent
 
 st.set_page_config(page_title="Wellness Tourism Predictor", page_icon="✈️")
 st.title("Wellness Tourism Package Purchase Predictor")
@@ -9,8 +13,8 @@ st.caption("Predict whether a customer is likely to purchase the Wellness Touris
 
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("model.pkl")
-    feature_columns = joblib.load("feature_columns.pkl")
+    model = joblib.load(BASE_DIR / "model.pkl")
+    feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
     return model, feature_columns
 
 
