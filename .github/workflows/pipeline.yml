@@ -125,7 +125,7 @@ jobs:
         run: pip install -r requirements.txt huggingface_hub
 
       - name: Download Trained Model
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: trained-model
           path: tourism_project/deployment/
@@ -138,8 +138,7 @@ jobs:
           python - <<'EOF'
           import os
           import sys
-          from huggingface_hub import HfApi
-          from huggingface_hub.utils import HfHubHTTPError
+          from huggingface_hub import HfApi, HfHubHTTPError
 
           api = HfApi()
           repo_id = f"{os.environ['HF_USERNAME']}/tourism-predictor"
