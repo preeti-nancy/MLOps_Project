@@ -8,3 +8,8 @@ __pycache__/
 *.csv.zip
 mlruns/
 __pycache__/
+
+*.zip
+*.csv.zip
+mlruns/
+__pycache__/
