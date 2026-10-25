@@ -1,6 +1,7 @@
 # Advanced Machine Learning and MLOps: Tourism Package Prediction
 
-Business Context
+#### Business Context
+
 "Visit with Us," a leading travel company, is revolutionizing the tourism industry by leveraging data-driven strategies to optimize operations and customer engagement. While introducing a new package offering, such as the Wellness Tourism Package, the company faces challenges in targeting the right customers efficiently. The manual approach to identifying potential customers is inconsistent, time-consuming, and prone to errors, leading to missed opportunities and suboptimal campaign performance.
 
 To address these issues, the company aims to implement a scalable and automated system that integrates customer data, predicts potential buyers, and enhances decision-making for marketing strategies. By utilizing an MLOps pipeline, the company seeks to achieve seamless integration of data preprocessing, model development, deployment, and CI/CD practices for continuous improvement. This system will ensure efficient targeting of customers, timely updates to the predictive model, and adaptation to evolving customer behaviors, ultimately driving growth and customer satisfaction.
@@ -9,7 +10,7 @@ As an MLOps Engineer at "Visit with Us," your responsibility is to design and de
 Data Dictionary
 The dataset contains customer and interaction data that serve as key attributes for predicting the likelihood of purchasing the Wellness Tourism Package. The detailed attributes are:
 
-Customer Details
+#### Customer Details
 
 CustomerID:Unique identifier for each customer.
 ProdTaken:Target variable indicating whether the customer has purchased a package (0: No, 1: Yes).
@@ -27,7 +28,9 @@ OwnCar:Whether the customer owns a car (0: No, 1: Yes).
 NumberOfChildrenVisiting:Number of children below age 5 accompanying the customer.
 Designation:Customer's designation in their current organization.
 MonthlyIncome:Gross monthly income of the customer.
-Customer Interaction Data
+
+
+#### Customer Interaction Data
 
 PitchSatisfactionScore:Score indicating the customer's satisfaction with the sales pitch.
 ProductPitched:The type of product pitched to the customer.
